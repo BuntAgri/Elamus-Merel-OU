@@ -1,78 +1,116 @@
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>V.E. BATIMENT</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Elamus Merel OU</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #111827; line-height: 1.6; }
-    header, footer { background: #1f2937; color: white; text-align: center; padding: 30px; }
-    nav a { color: #fbbf24; margin: 0 12px; text-decoration: none; font-weight: 600; }
-    section { padding: 60px 20px; max-width: 1200px; margin: auto; text-align: center; }
-    h2 { color: #1f2937; margin-bottom: 20px; font-size: 2.4em; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .gallery img { width: 100%; border-radius: 8px; }
-    .contact-form input, .contact-form textarea {
-      width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5faff;
     }
-    iframe { width: 100%; height: 300px; border: 0; border-radius: 8px; margin-top: 20px; }
+
+    header {
+      background: #2a5d9f;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+    }
+
+    .section:hover {
+      transform: scale(1.01);
+    }
+
+    .section img {
+      width: 45%;
+      border-radius: 10px;
+    }
+
+    .text {
+      flex: 1;
+    }
+
+    .text h2 {
+      font-size: 24px;
+      color: #2a5d9f;
+      margin-bottom: 10px;
+    }
+
+    .text p {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #2a5d9f;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 60px;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>V.E. BATIMENT</h1>
-  <nav>
-    <a href="#about">Présentation</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-    <a href="#map">Adresse</a>
-  </nav>
+  <h1>Elamus Merel OU</h1>
 </header>
 
-<section id="about">
-  <h2>Présentation</h2>
-  <p>Basée à Les Mureaux, V.E. BATIMENT est une entreprise spécialisée dans la maçonnerie générale et les gros travaux de construction. Grâce à une équipe qualifiée, nous réalisons des chantiers sur mesure en respectant les normes de qualité et de sécurité.</p>
-</section>
-
-<section id="services">
-  <h2>Nos Services</h2>
-  <p>Gros œuvre de bâtiment, travaux de maçonnerie, fondations, rénovation structurelle, et accompagnement personnalisé pour tous vos projets de construction.</p>
-</section>
-
-<section id="gallery">
-  <h2>Galerie</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1570126681032-3a7c41f13b0d?auto=format&fit=crop&w=800&q=80" alt="chantier 1">
-    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="chantier 2">
-    <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="chantier 3">
+<div class="section">
+  <img src="https://avatars.mds.yandex.net/i?id=45d038b0f798e60c7264deafefb28c2726a059dfc74267cd-13054092-images-thumbs&n=13" alt="Adventure 1">
+  <div class="text">
+    <h2>Immersive Events</h2>
+    <p>We design unforgettable experiences and high-energy entertainment for audiences across Estonia and beyond.</p>
   </div>
-</section>
+</div>
 
-<section id="contact">
-  <h2>Contactez-nous</h2>
-  <p>Email : contact@vebatiment.shop</p>
-  <p>Téléphone : +33 6 05 99 64 90</p>
-  <form class="contact-form">
-    <input type="text" placeholder="Nom">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Votre message"></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
+<div class="section">
+  <img src="https://avatars.mds.yandex.net/i?id=7fcb2e4178ece4b19a8da155992fe98739bcb6ac-9086430-images-thumbs&n=13" alt="Events 2">
+  <div class="text">
+    <h2>Live Spectacles</h2>
+    <p>From large-scale performances to exclusive VIP shows, we bring culture and energy together in thrilling formats.</p>
+  </div>
+</div>
 
-<section id="map">
-  <h2>Adresse</h2>
-  <p>66 Avenue du Maréchal Foch, 78130 Les Mureaux, France</p>
-  <iframe src="https://www.google.com/maps?q=66+Avenue+du+Mar%C3%A9chal+Foch,+Les+Mureaux,+France&output=embed" allowfullscreen loading="lazy"></iframe>
-</section>
+<div class="section">
+  <img src="https://avatars.mds.yandex.net/i?id=3ee793013bbf935b5e39898ce0580453b6d3c27400463233-12775993-images-thumbs&n=13" alt="Sea Events">
+  <div class="text">
+    <h2>Sea & Land Adventures</h2>
+    <p>Discover marine shows, sporting events, and interactive entertainment tailored for families and professionals alike.</p>
+  </div>
+</div>
+
+<div class="section">
+  <img src="https://avatars.mds.yandex.net/i?id=ebafee857726b08fa581d9a19f8834a2f091055c-10641465-images-thumbs&n=13" alt="Contact">
+  <div class="text">
+    <h2>Get in Touch</h2>
+    <p>Contact us at <strong>contact@emcor.shop</strong> or call <strong>+372 5371 7806</strong>. We’re located at Asunduse tn 4-25, Tallinn 11416, Estonia.</p>
+  </div>
+</div>
 
 <footer>
-  &copy; 2025 V.E. BATIMENT — Tous droits réservés
+  Elamus Merel OU – contact@emcor.shop – +372 5371 7806
 </footer>
 
 </body>
